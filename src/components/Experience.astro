@@ -1,0 +1,28 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Abr. 2024 - jun. 2024 · 3 meses",
+    title: "Desarrollador de Front-End",
+    company: "iUrban",
+    description:
+      "<p>Trabajé en varios proyectos utilizando <img src='/logos/angular.jpg' alt='angular' class='inline-block w-13 h-11' /> para la creación de interfaces responsivas.</p>",
+  },
+  {
+    date: "Mar. 2022 - jun. 2022 · 4 meses",
+    title: "Técnico Informático HelpDesk",
+    company: "OPPLUS",
+    description: "Prestaba soporte tecnico para la parte interna de la empresa , tanto en remoto como en presencial",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
